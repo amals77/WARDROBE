@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="about">
-            <h6 style=" margin-left: 16.8vw;">ABOUT ME</h6>
+            <h6 class="abo">ABOUT ME</h6>
             <div class="me">
                 <p style="text-align:center">I am a commercial fashion designer. Fashion for me is a creative endeavor, but it is not art for me</p>
             </div>
@@ -33,13 +33,17 @@
 
                 <img src="../../assets/images/truffle.jpg " class="fakeimg ">
             </div>
-            <p style="margin-left: 1.5vw;">Some text..</p>
+            <p class="icons" style="margin-top: 5px;">
+                <span (click)="remove()" class="fas fa-trash-alt del"></span>
+                <span (click)="edit()" class="fas fa-edit edit"></span>
+            </p>
 
         </div>
-        <div class="combine " style="margin-left: 2.5vw;">
+        <div class="new ">
             <img src="../../assets/images/hanger.png " class="hanger ">
-
-            <div class="fakeimg ">+</div>
+            <a [routerLink]="['/addNew']">
+                <img src="../../assets/images/plus.png " class="fakeimg ">
+            </a>
         </div>
 
     </div>

@@ -2,6 +2,7 @@
     height: 130px;
     width: 135px;
     margin-top: 10px;
+    background-color: grey;
 }
 
 .checked {
@@ -16,6 +17,12 @@ span {
     height: 190px;
     width: 135px;
     margin-left: 1.5vw;
+}
+
+.new {
+    height: 190px;
+    width: 135px;
+    margin-left: 2.5vw;
 }
 
 .detail {
@@ -60,7 +67,83 @@ span {
     height: 75vh;
 }
 
+.abo {
+    margin-left: 16.8vw;
+}
+
 .gap {
     margin-top: 2vw;
     margin-left: 5px;
+    /* background-color: chartreuse; */
+}
+
+.icons {
+    margin-left: 3vw;
+}
+
+.del {
+    color: red;
+    cursor: pointer;
+}
+
+.edit {
+    margin-left: 35px;
+    color: green;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .line {
+        height: 1px;
+        width: 70vw;
+        margin-left: 15vw
+    }
+    .profile {
+        margin-left: 35vw;
+        margin-top: 3vw;
+    }
+    .about {
+        margin-top: 2vw;
+    }
+    .abo {
+        margin-left: 38vw;
+    }
+    .me {
+        width: 80vw;
+        margin-left: 9.5vw;
+    }
+}
+
+@media only screen and (max-width: 402px) {
+    .combine {
+        margin-left: 20vw;
+    }
+    .icons {
+        margin-left: 20vw;
+    }
+    .new {
+        margin-left: 22vw;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .profile {
+        margin-left: 25vw;
+        /* background-color: red; */
+    }
+    .about {
+        margin-top: 1vw;
+    }
+    .abo {
+        margin-left: 33vw;
+    }
+    .me {
+        width: 90vw;
+        margin-left: 2vw;
+    }
+    .dp {
+        margin-left: 5vw;
+        width: 100px;
+        height: 100px;
+    }
 }

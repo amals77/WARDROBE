@@ -1,0 +1,22 @@
+.fakeimg {
+    height: 130px;
+    background: #aaa;
+    width: 135px;
+    margin-top: 10px;
+}
+
+.combine {
+    height: 190px;
+    width: 135px;
+    margin-left: 1.5vw;
+}
+
+.fake {
+    height: 200px;
+    background: #aaa;
+}
+
+.hanger {
+    height: 50px;
+    width: 135px;
+}

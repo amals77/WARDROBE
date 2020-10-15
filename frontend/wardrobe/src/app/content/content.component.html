@@ -1,17 +1,33 @@
-<div class="row container-fluid" style="margin-top: 1vw;">
-    <div class="col-md-5 ">
+<div class="row container-fluid" style="margin-top: 2vw;">
+    <div class="col-md-5 detail ">
 
-        <div class="fake">Fake Image</div>
+        <div class="profile">
+            <img class="dp" src="../../assets/images/raichel suseel.jpg">
+            <h5 class="name">Raichel Suseel</h5>
+            <div style="margin-left:.9vw">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </div>
+        <div class="about">
+            <h6 style=" margin-left: 16.8vw;">ABOUT ME</h6>
+            <div class="me">
+                <p style="text-align:center">I am a commercial fashion designer. Fashion for me is a creative endeavor, but it is not art for me</p>
+            </div>
+        </div>
 
 
     </div>
-
-    <div class="col-md row " style="margin-top: 1vw;">
-        <div style="width: 100%;height:70px;">
-            <h6 style="margin-left: 1.5vw;">UPLOAD NEW PRODUCTS</h6>
+    <div class="line"></div>
+    <div class="col-md row gap">
+        <div style="width: 100%;height:55px;">
+            <h6 style="margin-left: 1.5vw;">UPLOAD NEW PRODUCT</h6>
         </div>
 
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3  col " *ngFor="let item of dress">
             <div class="combine ">
                 <img src="../../assets/images/hanger.png " class="hanger ">
 
@@ -20,52 +36,12 @@
             <p style="margin-left: 1.5vw;">Some text..</p>
 
         </div>
-        <div class="col-lg-3 col-sm-6 ">
+        <div class="combine " style="margin-left: 2.5vw;">
+            <img src="../../assets/images/hanger.png " class="hanger ">
 
-            <div class="combine ">
-                <img src="../../assets/images/hanger.png " class="hanger ">
-
-                <img src="../../assets/images/truffle.jpg " class="fakeimg ">
-            </div>
-            <p style="margin-left: 1.5vw;">Some text..</p>
+            <div class="fakeimg ">+</div>
         </div>
-        <div class="col-lg-3 col-sm-6 ">
 
-            <div class="combine ">
-                <img src="../../assets/images/hanger.png " class="hanger ">
-
-                <img src="../../assets/images/truffle.jpg " class="fakeimg ">
-            </div>
-            <p style="margin-left: 1.5vw;">Some text..</p>
-        </div>
-        <div class="col-lg-3 col-sm-6 ">
-
-            <div class="combine ">
-                <img src="../../assets/images/hanger.png " class="hanger ">
-
-                <img src="../../assets/images/truffle.jpg " class="fakeimg ">
-            </div>
-            <p style="margin-left: 1.5vw;">Some text..</p>
-
-        </div>
-        <div class="col-lg-3 col-sm-6 ">
-
-            <div class="combine ">
-                <img src="../../assets/images/hanger.png " class="hanger ">
-
-                <img src="../../assets/images/truffle.jpg " class="fakeimg ">
-            </div>
-            <p style="margin-left: 1.5vw;">Some text..</p>
-        </div>
-        <div class="col-lg-3 col-sm-6 ">
-
-            <div class="combine ">
-                <img src="../../assets/images/hanger.png " class="hanger ">
-
-                <img src="../../assets/images/truffle.jpg " class="fakeimg ">
-            </div>
-            <p style="margin-left: 1.5vw;">Some text..</p>
-
-        </div>
     </div>
+
 </div>

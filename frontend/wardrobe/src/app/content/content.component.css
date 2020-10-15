@@ -1,8 +1,15 @@
 .fakeimg {
     height: 130px;
-    background: #aaa;
     width: 135px;
     margin-top: 10px;
+}
+
+.checked {
+    color: orange;
+}
+
+span {
+    margin-left: 8px;
 }
 
 .combine {
@@ -11,12 +18,49 @@
     margin-left: 1.5vw;
 }
 
-.fake {
-    height: 200px;
-    background: #aaa;
+.detail {
+    height: 100%;
+    /* background: #aaa; */
 }
 
 .hanger {
     height: 50px;
     width: 135px;
+}
+
+.dp {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile {
+    /* background-color: rebeccapurple; */
+    margin-left: 14.5vw;
+    margin-top: 5vw;
+}
+
+.name {
+    margin-left: .7vw;
+}
+
+.about {
+    margin-top: 5vw;
+}
+
+.me {
+    width: 20vw;
+    margin-left: 9.5vw;
+    /* background-color: blue; */
+}
+
+.line {
+    background-color: grey;
+    width: 1px;
+    height: 75vh;
+}
+
+.gap {
+    margin-top: 2vw;
+    margin-left: 5px;
 }

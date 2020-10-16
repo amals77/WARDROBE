@@ -1,0 +1,116 @@
+.smallimg {
+    width: 90px;
+    height: 105px;
+    margin-top: 10px;
+    margin-left: 5vw;
+}
+
+.mainImg {
+    /* width: 260px; */
+    width: 25vw;
+    height: 400px;
+    margin-left: 2vw;
+}
+
+.ami {
+    margin-top: 13px;
+    width: 200px;
+    border: 1px solid rgba(8, 88, 207, 0.856);
+    padding: 2px;
+    background-color: rgba(8, 88, 207, 0.856);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 2vw;
+}
+
+.dp {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.pro {
+    width: 50vw;
+    height: 85px;
+    margin-top: 1vw;
+    position: relative;
+}
+
+.rating {
+    top: 10px;
+    position: absolute;
+    left: 100px;
+}
+
+.checked {
+    color: orange;
+}
+
+span {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.proDetail {
+    margin-top: 20px;
+}
+
+input {
+    height: 25px;
+    width: 300px;
+    border: 2px solid gainsboro;
+}
+
+.package {
+    margin-top: 1vw;
+}
+
+.period {
+    margin-top: 15px;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h6 {
+    letter-spacing: 1px;
+}
+
+.package h6 {
+    margin-top: 2vw;
+}
+
+select {
+    width: 300px;
+    border: 2px solid gainsboro;
+}
+
+select:focus {
+    width: 300px;
+}
+
+option {
+    margin-left: 5px;
+}
+
+.box {
+    width: 100px;
+}
+
+.rental {
+    float: left;
+    background-color: green;
+    width: 150px;
+}
+
+.retail {
+    float: left;
+    width: 150px;
+    margin-left: 50px;
+    background-color: yellow;
+}

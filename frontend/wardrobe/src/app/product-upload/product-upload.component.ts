@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-upload.component.css']
 })
 export class ProductUploadComponent implements OnInit {
+size:string[]=["XS","S","M","+"]
 
   constructor() { }
 

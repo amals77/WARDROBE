@@ -157,3 +157,92 @@ option {
     padding: 2px;
     width: 20vw;
 }
+
+@media only screen and (max-width: 767.5px) {
+    .mainImg {
+        width: 40vw;
+    }
+    .smallimg {
+        margin-left: 10vw;
+    }
+    .retail {
+        margin-left: .5vw;
+    }
+    .adjust {
+        margin-left: 28vw;
+    }
+    select {
+        width: 35vw;
+    }
+    select:focus {
+        width: 35vw;
+    }
+    input {
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 575.5px) {
+    .adjust {
+        margin-left: 5vw;
+    }
+    .arrange {
+        margin-left: 4vw;
+    }
+    .mainImg {
+        margin-left: 22vw;
+        width: 50vw;
+        height: 350px;
+    }
+    .smallimg {
+        margin-left: 14vw;
+        width: 75px;
+        height: 95px;
+    }
+    .ami {
+        margin-left: 27vw;
+        width: 40vw;
+        font-size: 3vw;
+    }
+    select {
+        width: 55vw;
+    }
+    select:focus {
+        width: 55vw;
+    }
+    input {
+        width: 55vw;
+    }
+    .big {
+        width: 70vw;
+    }
+    .publish {
+        width: 30vw;
+    }
+    .save {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 439.5px) {
+    .smallimg {
+        margin-left: 9vw;
+        width: 20vw;
+        height: 95px;
+    }
+    .mainImg {
+        height: 80vw;
+    }
+    select {
+        width: 65vw;
+    }
+    select:focus {
+        width: 65vw;
+    }
+    input {
+        width: 65vw;
+    }
+    .big {
+        width: 80vw;
+    }
+}

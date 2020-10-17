@@ -12,7 +12,8 @@
     margin-left: 2vw;
 }
 
-.ami {
+
+/* .ami {
     margin-top: 13px;
     width: 200px;
     border: 1px solid rgba(27, 78, 155, 0.856);
@@ -22,6 +23,33 @@
     text-decoration: none;
     color: white;
     margin-left: 2vw;
+} */
+
+#ami::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#ami {
+    color: transparent;
+}
+
+#ami::before {
+    content: "ADD MORE IMAGES";
+    cursor: pointer;
+    margin-top: 13px;
+    border: 1px solid rgba(27, 78, 155, 0.856);
+    padding: 2px;
+    background-color: rgba(27, 78, 155, 0.856);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 2vw;
+    display: inline-block;
+    width: 200px;
+}
+
+#ami:focus {
+    outline: none;
 }
 
 .dp {
@@ -58,7 +86,7 @@ span {
     margin-top: 20px;
 }
 
-input {
+.input {
     height: 25px;
     width: 30vw;
     border: 2px solid gainsboro;
@@ -76,6 +104,14 @@ input {
     text-align: center;
     font-size: 12px;
     font-weight: bold;
+}
+
+textarea::placeholder {
+    text-align: left;
+}
+
+textarea {
+    border: 2px solid gainsboro;
 }
 
 .package h6 {
@@ -128,6 +164,7 @@ option {
 .big {
     width: 45vw;
     height: 118px;
+    margin-top: 5px;
 }
 
 .btn {
@@ -199,7 +236,7 @@ option {
         width: 75px;
         height: 95px;
     }
-    .ami {
+    #ami::before {
         margin-left: 27vw;
         width: 40vw;
         font-size: 3vw;

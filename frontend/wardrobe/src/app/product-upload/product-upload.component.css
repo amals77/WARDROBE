@@ -12,19 +12,6 @@
     margin-left: 2vw;
 }
 
-
-/* .ami {
-    margin-top: 13px;
-    width: 200px;
-    border: 1px solid rgba(27, 78, 155, 0.856);
-    padding: 2px;
-    background-color: rgba(27, 78, 155, 0.856);
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    margin-left: 2vw;
-} */
-
 #ami::-webkit-file-upload-button {
     visibility: hidden;
 }

@@ -1,14 +1,14 @@
 <div class="row ">
     <div class="col-md-6">
         <div class="col-sm-4" style="float: left;margin-top: 2vw;">
-            <img src="../../assets/images/truffle.jpg" class="smallimg">
-            <img src="../../assets/images/plus.png" class="smallimg">
-            <img src="../../assets/images/plus.png" class="smallimg">
+            <img [src]='url1' class="smallimg" id="smallimg1">
+            <img [src]='url2' class="smallimg" id="smallimg2">
+            <img [src]='url3' class="smallimg" id="smallimg3">
         </div>
         <div class="col-sm-6" style="float: left;margin-top: 1vw;">
-            <img src="../../assets/images/truffle.jpg" class="mainImg">
+            <img [src]='url1' class="mainImg" id="displayImg">
 
-            <input type="file" id="ami">
+            <input type="file" id="ami" (change)="onSelectFile($event)">
         </div>
 
     </div>
@@ -32,14 +32,14 @@
 
             <div class="proDetail">
                 <h6>PRODUCT NAME</h6>
-                <input class="input" type="text">
+                <input class="input" type="text" [(ngModel)]="formData.name" [ngModelOptions]="{standalone: true}">
             </div>
             <div class="package">
                 <h6>OUTFIT PACKAGE</h6>
                 <input type="date" class="period input" placeholder="CHOOSE RENTAL PERIOD">
 
                 <h6>CONDITION</h6>
-                <select>
+                <select [(ngModel)]="formData.condition" [ngModelOptions]="{standalone: true}">
               <option value="Good">Good</option>
               <option value="New">New</option>
               <option value="Used">Used</option>
@@ -48,11 +48,11 @@
                 <div>
                     <div class="rental">
                         <h6>RENTAL RATE</h6>
-                        <input type="text" class="box input" placeholder="$00.00">
+                        <input type="text" class="box input" placeholder="$00.00" [(ngModel)]="formData.rentalRate" [ngModelOptions]="{standalone: true}">
                     </div>
                     <div class="retail">
                         <h6>RETAIL RATE</h6>
-                        <input type="text" class="box input" placeholder="$00.00">
+                        <input type="text" class="box input" placeholder="$00.00" [(ngModel)]="formData.retailRate" [ngModelOptions]="{standalone: true}">
                     </div>
                 </div>
             </div>
@@ -61,11 +61,11 @@
     <div class="col-sm-5">
         <div class="package" style="margin-left: 5.5vw;">
             <h6>TYPE</h6>
-            <input class="input" type="text">
+            <input class="input" type="text" [(ngModel)]="formData.type" [ngModelOptions]="{standalone: true}">
             <h6>SUBTYPE</h6>
-            <input class="input" type="text">
+            <input class="input" type="text" [(ngModel)]="formData.subtype" [ngModelOptions]="{standalone: true}">
             <h6>MATERIAL</h6>
-            <select>
+            <select [(ngModel)]="formData.material" [ngModelOptions]="{standalone: true}">
           <option value="Cotton">Cotton</option>
           <option value="Leather">Leather</option>
           <option value="Nylon">Nylon</option>
@@ -74,7 +74,7 @@
 
         </select>
             <h6>BRAND</h6>
-            <select>
+            <select [(ngModel)]="formData.brand" [ngModelOptions]="{standalone: true}">
       <option value="Gucci">Gucci</option>
       <option value="Nike">Nike</option>
       <option value="Addidas">Addidas</option>
@@ -83,14 +83,14 @@
 
     </select>
             <h6>FIT</h6>
-            <select>
+            <select [(ngModel)]="formData.fit" [ngModelOptions]="{standalone: true}">
           <option value="Loose">Loose</option>
           <option value="Tight">Tight</option>
 
 
         </select>
             <h6>OCCATION</h6>
-            <select>
+            <select [(ngModel)]="formData.occation" [ngModelOptions]="{standalone: true}">
       <option value="Party">Party</option>
       <option value="Office">Office</option>
       <option value="Casual">Casual</option>
@@ -115,28 +115,30 @@
         <div class="adjust">
             <div class="package">
                 <h6>PATTERN</h6>
-                <select>
+                <select [(ngModel)]="formData.pattern" [ngModelOptions]="{standalone: true}">
         <option value="Butterick">Butterick </option>
         <option value="Jalie">Jalie </option>
         <option value="KwikSew">KwikSew </option>
 
       </select>
                 <h6>PRODUCT DETAILS</h6>
-                <textarea class="big" placeholder="Type your product details here..."></textarea>
-                <h6>DAMAGES</h6>
-                <textarea class="big" placeholder="Type if any damages..."></textarea>
+                <textarea class="big" placeholder="Type your product details here..." [(ngModel)]="formData.productdetail" [ngModelOptions]="{standalone: true}"></textarea >
+                    <h6>DAMAGES</h6>
+                    <textarea class="big" placeholder="Type if any damages..."
+                    [(ngModel)]="formData.damage" [ngModelOptions]="{standalone: true}"></textarea>
                 <h6>CARE</h6>
                 <select>
         <option value="Select">Select </option>
       </select>
                 <br>
-                <textarea class="big" placeholder="Type if any damages..."></textarea>
+                <textarea class="big" placeholder="Description here..." [(ngModel)]="formData.desc" [ngModelOptions]="{standalone: true}"></textarea>
             </div>
         </div>
     </div>
 </div>
 <div class="btn">
-    <button class="save">SAVE</button>
-    <button class="publish">PUBLISH</button>
+    <button class="save" (click)="save('Saved')">SAVE</button>
+    <button class="publish" (click)="publish('Published')">PUBLISH</button>
+
 
 </div>

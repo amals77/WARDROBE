@@ -5,6 +5,22 @@
     background-color: grey;
 }
 
+.overlay {
+    position: absolute;
+    color: white;
+    margin-top: 65px;
+    margin-left: 42px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addpro {
+    height: 130px;
+    width: 135px;
+    margin-top: 10px;
+    background-color: grey;
+}
+
 h6 {
     letter-spacing: 1px;
 }
@@ -26,7 +42,7 @@ span {
 .new {
     height: 190px;
     width: 135px;
-    margin-left: 2.5vw;
+    margin-left: 3.5vw;
 }
 
 .detail {

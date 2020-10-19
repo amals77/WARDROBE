@@ -8,6 +8,10 @@ var ProductsSchema = new Schema({
         type: String,
         required: true
     },
+    date: {
+        type: String,
+        required: true
+    },
     condition: {
         type: String,
         required: true
@@ -45,6 +49,14 @@ var ProductsSchema = new Schema({
         type: String,
         required: true
     },
+    size: {
+        type: String,
+        required: true
+    },
+    color: {
+        type: String,
+        required: true
+    },
     pattern: {
         type: String,
         required: true
@@ -54,6 +66,10 @@ var ProductsSchema = new Schema({
         required: true
     },
     damage: {
+        type: String,
+        required: true
+    },
+    care: {
         type: String,
         required: true
     },

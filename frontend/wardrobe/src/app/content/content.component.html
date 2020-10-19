@@ -27,22 +27,23 @@
             <h6 style="margin-left: 1.5vw;">UPLOAD NEW PRODUCT</h6>
         </div>
 
-        <div class="col-lg-3  col " *ngFor="let item of dress">
+        <div class="col-lg-3  col " style="margin-left: 1vw;" *ngFor="let item of dress">
             <div class="combine ">
                 <img src="../../assets/images/hanger.png " class="hanger ">
+                <p class="overlay">{{item.status}}</p>
+                <img src="../../assets/images/{{item.image}} " class="fakeimg ">
 
-                <img src="../../assets/images/truffle.jpg " class="fakeimg ">
             </div>
             <p class="icons" style="margin-top: 5px;">
-                <span (click)="remove()" class="fas fa-trash-alt del"></span>
-                <span (click)="edit()" class="fas fa-edit edit"></span>
+                <span (click)="remove(item._id,item)" class="fas fa-trash-alt del"></span>
+                <a [routerLink]="['/editview']"> <span (click)="edit(item._id)" class="fas fa-edit edit"></span></a>
             </p>
 
         </div>
         <div class="new ">
             <img src="../../assets/images/hanger.png " class="hanger ">
             <a [routerLink]="['/addNew']">
-                <img src="../../assets/images/plus.png " class="fakeimg ">
+                <img src="../../assets/images/plus.png " class="addpro ">
             </a>
         </div>
 

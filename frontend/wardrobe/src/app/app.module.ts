@@ -9,14 +9,20 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { MainComponent } from './main/main.component';
 import { ProductUploadComponent } from './product-upload/product-upload.component';
-import {UploadService} from './upload.service'
+import {UploadService} from './upload.service';
+import { EditinfoComponent } from './editinfo/editinfo.component';
+import { EditviewComponent } from './editview/editview.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
     MainComponent,
-    ProductUploadComponent
+    ProductUploadComponent,
+    EditinfoComponent,
+    EditviewComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -40,10 +40,9 @@
 
                 <h6>CONDITION</h6>
                 <select [(ngModel)]="formData.condition" [ngModelOptions]="{standalone: true}">
-              <option value={{item}} *ngFor="let item of condition">{{item}}</option>
+                  <option value={{item}} *ngFor="let item of condition">{{item}}</option>
 
-
-            </select>
+          </select>
                 <div>
                     <div class="rental">
                         <h6>RENTAL RATE</h6>
@@ -65,45 +64,37 @@
             <input class="input" type="text" [(ngModel)]="formData.subtype" [ngModelOptions]="{standalone: true}">
             <h6>MATERIAL</h6>
             <select [(ngModel)]="formData.material" [ngModelOptions]="{standalone: true}">
-          <option *ngFor="let item of material" value={{item}} >{{item}}</option>
+              <option *ngFor="let item of material" value={{item}} >{{item}}</option>
 
-
-        </select>
+      </select>
             <h6>BRAND</h6>
             <select [(ngModel)]="formData.brand" [ngModelOptions]="{standalone: true}">
-      <option *ngFor="let item of brand" value={{item}}>{{item}}</option>
+              <option *ngFor="let item of brand" value={{item}}>{{item}}</option>
 
 
-
-    </select>
+  </select>
             <h6>FIT</h6>
             <select [(ngModel)]="formData.fit" [ngModelOptions]="{standalone: true}">
-          <option *ngFor="let item of fit" value={{item}}>{{item}}</option>
+              <option *ngFor="let item of fit" value={{item}}>{{item}}</option>
 
 
-
-        </select>
+      </select>
             <h6>OCCATION</h6>
             <select [(ngModel)]="formData.occation" [ngModelOptions]="{standalone: true}">
-      <option *ngFor="let item of occation"value={{item}}>{{item}}</option>
+              <option *ngFor="let item of occation"value={{item}}>{{item}}</option>
 
-
-    </select>
+  </select>
             <h6>SIZE</h6>
 
             <select [(ngModel)]="formData.size" [ngModelOptions]="{standalone: true}">
               <option *ngFor="let item of size" value={{item}}>{{item}}</option>
 
-
-            </select>
+  </select>
             <h6>COLOR</h6>
             <select [(ngModel)]="formData.color" [ngModelOptions]="{standalone: true}">
               <option *ngFor="let item of color" value={{item}}>{{item}}</option>
 
-
-
-            </select>
-
+  </select>
         </div>
     </div>
     <div class="col-md-6">
@@ -111,20 +102,17 @@
             <div class="package">
                 <h6>PATTERN</h6>
                 <select [(ngModel)]="formData.pattern" [ngModelOptions]="{standalone: true}">
-        <option *ngFor="let item of pattern" value={{item}}>{{item}} </option>
-
-
-      </select>
+                  <option *ngFor="let item of pattern" value={{item}}>{{item}} </option>
+    </select>
                 <h6>PRODUCT DETAILS</h6>
                 <textarea class="big" placeholder="Type your product details here..." [(ngModel)]="formData.productdetail" [ngModelOptions]="{standalone: true}"></textarea >
-                    <h6>DAMAGES</h6>
-                    <textarea class="big" placeholder="Type if any damages..."
-                    [(ngModel)]="formData.damage" [ngModelOptions]="{standalone: true}"></textarea>
+                  <h6>DAMAGES</h6>
+                  <textarea class="big" placeholder="Type if any damages..."
+                  [(ngModel)]="formData.damage" [ngModelOptions]="{standalone: true}"></textarea>
+
                 <h6>CARE</h6>
                 <select [(ngModel)]="formData.care" [ngModelOptions]="{standalone: true}">
-        <option *ngFor="let item of care" value={{item}}>{{item}}</option>
-
-
+                  <option *ngFor="let item of care" value={{item}}>{{item}}</option>
       </select>
                 <br>
                 <textarea class="big" placeholder="Description here..." [(ngModel)]="formData.desc" [ngModelOptions]="{standalone: true}"></textarea>
